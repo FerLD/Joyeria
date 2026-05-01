@@ -1,0 +1,109 @@
+/* FOOTER BASE */
+.footer {
+  background: #d8d6d6b4;
+  padding: 60px 0 20px;
+  margin-top: 80px;
+}
+
+/* CONTENEDOR */
+.footer-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* BRAND */
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand p {
+  margin-top: 10px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* LOGO reutilizado */
+.footer .logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  color: #2c2c2c;
+}
+
+.footer .logo span {
+  color: #c49b63;
+}
+
+/* TITULOS */
+.footer h4 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* LINKS */
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* EFECTO LINEA COMO NAVBAR */
+.footer a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #c49b63;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+.footer a:hover {
+  color: #2c2c2c;
+}
+
+/* CONTACTO */
+.footer-contact p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

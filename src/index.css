@@ -1,0 +1,82 @@
+/* RESET BASE */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES GLOBALES (puedes usarlas en todo tu proyecto) */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #2c2c2c;
+  --color-accent: #c49b63; /* dorado elegante */
+  --color-accent-hover: #a67c47;
+  --color-gray: #777;
+  --color-border: #e5e5e5;
+
+  --font-main: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-title: "Playfair Display", serif;
+}
+
+/* BASE */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* ROOT (MUY IMPORTANTE) */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TIPOGRAFÍA (neutral, no invasiva) */
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  font-weight: 500;
+}
+
+p {
+  color: var(--color-gray);
+}
+
+/* BOTONES BASE */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* IMÁGENES */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+}
+
+/* UTILIDADES */
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
