@@ -26,8 +26,8 @@ const Inicio = () => {
             <div className="grid-productos">
                 <div className="producto">
                     <img src="src/assets/images/Producto1.png" alt="Producto 1" />
-                    <h3>Anillo de Plata</h3>
-                    <p>Un anillo elegante de plata con diseño moderno.</p>
+                    <h3>Relicario de oro</h3>
+                    <p>Un relicario elegante de oro con diseño moderno en forma de corazón.</p>
                 </div>
                 <div className="producto">
                     <img src="src/assets/images/Producto2.png" alt="Producto 2" />
