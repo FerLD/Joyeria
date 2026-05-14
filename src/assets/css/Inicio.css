@@ -60,7 +60,9 @@
 .imagen img {
   width: 420px;
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.15));
+  
 }
+
 
 
 /* RESPONSIVE */
@@ -178,3 +180,312 @@
     height: 200px;
   }
 }
+
+/* ========================= */
+/* 💎 SECCIÓN CARACTERÍSTICAS */
+/* ========================= */
+
+.caracteristicas {
+  width: 100%;
+}
+
+/* WRAPPER (estructura principal) */
+.caracteristicas-wrapper {
+  display: flex;
+  align-items: stretch;
+  min-height: 520px;
+}
+
+/* ========================= */
+/* 🖼️ IMAGEN IZQUIERDA */
+/* ========================= */
+
+.caracteristicas-img {
+  width: 50%;
+}
+
+.caracteristicas-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  /* toque premium */
+  filter: grayscale(10%) contrast(105%);
+}
+
+/* ========================= */
+/* 🧱 CONTENIDO DERECHO */
+/* ========================= */
+
+.caracteristicas-content {
+  width: 90%;
+
+  padding: 80px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* fondo oscuro elegante */
+  background-color: #0a0a0a;
+
+  /* textura */
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+}
+
+
+
+.caracteristicas-content h2 {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.caracteristicas-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+/* ITEM */
+.caracteristica {
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.caracteristica:hover {
+  transform: translateY(-4px);
+}
+
+/* TITULO ITEM */
+.caracteristica h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* LINEA DORADA */
+.linea {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #c49b63;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.caracteristica:hover .linea {
+  width: 50px;
+}
+
+/* TEXTO */
+.caracteristica p {
+  font-size: 0.9rem;
+  color: #bfbfbf;
+  line-height: 1.5;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .caracteristicas-wrapper {
+    flex-direction: column;
+  }
+
+  .caracteristicas-img,
+  .caracteristicas-content {
+    width: 100%;
+  }
+
+  .caracteristicas-img img {
+    height: 300px;
+  }
+
+  .caracteristicas-content {
+    padding: 50px 25px;
+  }
+
+  .caracteristicas-container {
+    grid-template-columns: 1fr;
+  }
+
+  .caracteristicas-content h2 {
+    text-align: center;
+  }
+
+  .caracteristica {
+    text-align: center;
+  }
+
+  .linea {
+    margin: 10px auto;
+  }
+}
+
+
+
+/* ========================= */
+/* INFO EXTRA */
+/* ========================= */
+
+.info-extra {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+/* CONTENEDOR */
+.info-container {
+  width: 85%;
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  text-align: center;
+}
+
+/* ITEM */
+.info-item {
+  padding: 0 20px;
+  position: relative;
+}
+
+/* LÍNEAS DIVISORIAS FINAS */
+.info-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: #eee;
+}
+
+/* ICONO MINIMAL */
+.info-icon {
+  font-size: 1.6rem;
+  color: #c49b63;
+  margin-bottom: 15px;
+}
+
+/* TITULO */
+.info-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+
+/* TEXTO */
+.info-item p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* PAGOS */
+.pagos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* BADGES */
+.pagos span {
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  color: #555;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+.pagos span:hover {
+  border-color: #c49b63;
+  color: #c49b63;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .info-item::after {
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* ========================= */
+/* ✨ ANIMACIÓN SCROLL */
+/* ========================= */
+
+.caracteristicas {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.caracteristicas.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ITEMS */
+.caracteristica {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+.caracteristicas.show .caracteristica {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DELAYS */
+.caracteristica:nth-child(1) { transition-delay: 0.2s; }
+.caracteristica:nth-child(2) { transition-delay: 0.4s; }
+.caracteristica:nth-child(3) { transition-delay: 0.6s; }
+.caracteristica:nth-child(4) { transition-delay: 0.8s; }
+
+/* ICONOS */
+.info-item i {
+  display: block;
+  font-size: 1.4rem;
+  color: #c49b63;
+  margin: 10px 0;
+}
+
+
+
+
+
+
