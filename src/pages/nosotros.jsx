@@ -1,5 +1,5 @@
 import '../assets/css/Inicio.css';
-
+puto
 const Nosotros2 = () => {
   return (
     <section className="nosotros">
