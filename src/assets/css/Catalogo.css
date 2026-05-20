@@ -1,0 +1,337 @@
+.catalogo{
+  padding:120px 8%;
+  background:#faf8f5;
+}
+
+.catalogo-header{
+  text-align:center;
+  max-width:700px;
+  margin:auto auto 70px;
+}
+
+.catalogo-header span{
+  color:#b58b54;
+  letter-spacing:4px;
+  font-size:.8rem;
+  font-weight:600;
+}
+
+.catalogo-header h2{
+  font-size:4rem;
+  margin:20px 0;
+  font-family:"Playfair Display",serif;
+  color:#1c1c1c;
+}
+
+.catalogo-header p{
+  color:#666;
+  line-height:1.8;
+}
+
+.catalogo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+.card{
+  background:#fff;
+  border-radius:28px;
+  overflow:hidden;
+  transition:.4s;
+  box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card-img{
+  overflow:hidden;
+}
+
+.card-img img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  transition:.6s;
+}
+
+.card:hover img{
+  transform:scale(1.08);
+}
+
+.card-info{
+  padding:30px;
+}
+
+.card-info span{
+  color:#b58b54;
+  letter-spacing:3px;
+  font-size:.75rem;
+  font-weight:600;
+  text-transform:uppercase;
+}
+
+.card-info h3{
+  margin:15px 0;
+  font-size:2rem;
+  font-family:"Playfair Display",serif;
+}
+
+.card-info p{
+  color:#666;
+  line-height:1.8;
+  margin-bottom:25px;
+}
+
+.card-info button{
+  border:none;
+  padding:14px 28px;
+  border-radius:50px;
+  background:#1c1c1c;
+  color:#fff;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.card-info button:hover{
+  background:#c49b63;
+}
+
+
+
+
+/* FLOATING MENU */
+
+.floating-menu{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+    padding-top: 90px;
+  z-index: 999;
+}
+
+.floating-card{
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+
+  background: #fff;
+  border-radius: 30px;
+
+  display: grid;
+  grid-template-columns: .9fr 1fr;
+
+  position: relative;
+  overflow: hidden;     
+
+  animation: show .4s ease;
+
+    z-index: 1001;
+}
+
+@keyframes show{
+  from{
+    opacity:0;
+    transform:translateY(-30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.cerrar{
+  position:absolute;
+  top:20px;
+  right:20px;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#1c1c1c;
+  color:#fff;
+
+  cursor:pointer;
+z-index: 2000;
+}
+
+.floating-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.floating-info{
+  padding:22px 28px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.floating-info span{
+  color:#b58b54;
+  letter-spacing:3px;
+  font-size:.75rem;
+  text-transform:uppercase;
+}
+
+.floating-info h2{
+  font-size: 1.8rem;
+  margin: 10px 0;
+
+  font-family:"Playfair Display",serif;
+}
+
+.floating-info p{
+  color:#666;
+    line-height: 1.5;
+  font-size: .9rem;
+}
+
+.specs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+
+  gap:12px;
+    margin: 18px 0;
+}
+
+.specs div{
+  background:#f5f1ea;
+   padding: 10px;
+  border-radius:14px;
+}
+
+.specs strong{
+  font-size:.9rem;
+}
+
+.specs p{
+  font-size:.82rem;
+  margin-top:5px;
+}
+
+.precio{
+  color:#b58b54;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.cantidad{
+  display:flex;
+  align-items:center;
+
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.cantidad button{
+  width:38px;
+  height:38px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#c49b63;
+  color:#fff;
+
+  font-size:1rem;
+  cursor:pointer;
+}
+
+.cantidad span{
+  font-size:1rem;
+  font-weight:bold;
+}
+
+.total{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:15px;
+  padding:12px 0;
+
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+
+  font-size:1rem;
+}
+
+.total strong{
+  color:#b58b54;
+  font-size:1.2rem;
+}
+
+.comprar{
+  width:100%;
+
+  border:none;
+  padding:15px;
+
+  border-radius:50px;
+
+  background:#1c1c1c;
+  color:#fff;
+
+  font-size:.95rem;
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.comprar:hover{
+  background:#c49b63;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .floating-card{
+    width:95%;
+    height:auto;
+
+    grid-template-columns:1fr;
+  }
+
+  .floating-img img{
+    height:350px;
+  }
+
+  .floating-info{
+    padding:30px;
+  }
+
+  .floating-info h2{
+    font-size:2rem;
+  }
+
+  .specs{
+    grid-template-columns:1fr;
+  }
+}
+
+
+.limite-texto{
+  font-size:.85rem;
+  color:#9b7a4d;
+  margin-bottom:18px;
+}
+
+.cantidad button:disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}

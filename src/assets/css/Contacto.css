@@ -1,0 +1,57 @@
+
+/*
+	Estructura básica de un componente JSX (React) - ejemplo:
+
+	import React from 'react';
+
+	const Contacto = () => {
+		return (
+			<div className="contacto">
+				<h1>Contacto</h1>
+				<form>
+					<label>
+						Nombre:
+						<input type="text" name="nombre" />
+					</label>
+					<label>
+						Mensaje:
+						<textarea name="mensaje" />
+					</label>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		);
+	};
+
+	export default Contacto;
+
+*/
+
+/* Aquí pueden ir estilos CSS para el componente Contacto */
+.contacto {
+	max-width: 600px;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+
+.contacto h1 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.contacto form label {
+	display: block;
+	margin-bottom: 0.75rem;
+}
+
+.contacto input,
+.contacto textarea {
+	width: 100%;
+	padding: 0.5rem;
+	box-sizing: border-box;
+}
+
+.contacto button {
+	margin-top: 0.5rem;
+	padding: 0.5rem 1rem;
+}

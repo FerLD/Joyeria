@@ -88,9 +88,9 @@ const Inicio = () => {
             <div className="caracteristicas-container">
 
               <div className="caracteristica">
-                <h4>Oro 16K Certificado</h4>
+                <h4>Oro laminado 18K </h4>
                 <span className="linea"></span>
-                <p>Piezas auténticas con certificación de calidad.</p>
+                <p>Piezas auténticas de calidad.</p>
               </div>
 
               <div className="caracteristica">
