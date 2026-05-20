@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../assets/css/Catalogo.css';
 
 const Catalogo = () => {
 
   const [productoActivo, setProductoActivo] = useState(null);
   const [cantidad, setCantidad] = useState(1);
-
+const navigate = useNavigate();
   const productos = [
     {
         id: 1,
@@ -28,18 +29,20 @@ const Catalogo = () => {
         descripcion: 'Elegancia minimalista diseñada para complementar estilos sofisticados.',
         material: 'Oro Blanco',
         piedra: 'Zafiro',
-        garantia: '18 meses'
+        garantia: '18 meses',
+        limite: 4
     },
     {
         id: 3,
         nombre: 'Aretes Royale',
         categoria: 'Edición Exclusiva',
         precio: 1899,
-        imagen: 'src/assets/images/Producto2.png',
+        imagen: 'src/assets/images/Producto 6.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
-        garantia: '6 meses'
+        garantia: '6 meses',
+        limite: 4
     },
     {
         id: 4,
@@ -50,7 +53,8 @@ const Catalogo = () => {
         descripcion: 'Diseño refinado con acabado brillante inspirado en la alta joyería contemporánea.',
         material: 'Oro 18K',
         piedra: 'Diamante Premium',
-        garantia: '12 meses'
+        garantia: '12 meses',
+        limite: 4
     },
     {
         id: 5,
@@ -61,7 +65,8 @@ const Catalogo = () => {
         descripcion: 'Elegancia minimalista diseñada para complementar estilos sofisticados.',
         material: 'Oro Blanco',
         piedra: 'Zafiro',
-        garantia: '18 meses'
+        garantia: '18 meses',
+        limite: 4,
     },
     {
         id: 6,
@@ -72,7 +77,8 @@ const Catalogo = () => {
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
-        garantia: '6 meses'
+        garantia: '6 meses',
+        limite: 4
     }
   ];
 
@@ -145,7 +151,7 @@ const Catalogo = () => {
                         </div>
                     </div>
 
-                 <div className="precio-row">
+                <div className="precio-row">
                     <h3 className="precio">
                         ${productoActivo.precio} MXN
                     </h3>
@@ -155,7 +161,6 @@ const Catalogo = () => {
                     </span>
 
                     </div>
-
                         <div className="cantidad">
                             <button
                                 onClick={() =>
@@ -171,18 +176,21 @@ const Catalogo = () => {
                             </button>
                         </div>
 
-                        <p className="limite-texto">
-                        Límite de compra: {productoActivo.limite} piezas
-                        </p>
-                        
+            
                     <div className="total">
                         Total:
                         <strong>
                         ${productoActivo.precio * cantidad} MXN
                         </strong>
                     </div>
-
-                    <button className="comprar">
+    
+                    <button className="comprar" onClick={() => {localStorage.setItem('pedido',
+                            JSON.stringify({
+                            producto: productoActivo.nombre,
+                            cantidad,
+                            precio: productoActivo.precio * cantidad
+                            })
+                        );navigate('/contacto');}}>
                         Hacer Pedido
                     </button>
                 </div>
