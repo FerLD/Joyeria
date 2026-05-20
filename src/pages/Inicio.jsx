@@ -35,7 +35,7 @@ const Inicio = () => {
         <div className="contenido">
           <div className="texto">
             <img src="src/assets/images/AuraDorada.png" />
-            <p>¡Para joyas únicas que realzan tu estilo y te acompañan a lo largo de tu vida!</p>
+            <p>Joyas que cuentan tu historia realzan tu estilo y te acompañan a lo largo de tu vida</p>
             <button className="btn">Contáctanos</button>
           </div>
 

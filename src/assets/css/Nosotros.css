@@ -1,0 +1,180 @@
+/* ===== NOSOTROS ===== */
+
+.nosotros{
+  padding:140px 8%;
+  background:#faf8f5;
+}
+
+/* HEADER */
+
+.nosotros-header{
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 80px;
+}
+
+.nosotros-header span{
+  color:#b58b54;
+  letter-spacing:5px;
+  font-size:.8rem;
+  font-weight:600;
+}
+
+.nosotros-header h2{
+  font-size:4.3rem;
+  margin:25px 0;
+
+  color:#1c1c1c;
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+}
+
+.nosotros-header p{
+  color:#666;
+  line-height:1.9;
+}
+
+/* GRID */
+
+.equipo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:35px;
+}
+
+/* CARD */
+
+.miembro-card{
+  background:#fff;
+  border-radius:30px;
+  overflow:hidden;
+
+  transition:.4s ease;
+
+  box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.miembro-card:hover{
+  transform:translateY(-10px);
+
+  box-shadow:0 25px 55px rgba(0,0,0,.1);
+}
+
+/* IMG */
+
+.miembro-img{
+  overflow:hidden;
+}
+
+.miembro-img img{
+  width:100%;
+  height:520px;
+
+  object-fit:cover;
+  transition:.6s;
+}
+
+.miembro-card:hover img{
+  transform:scale(1.05);
+}
+
+/* INFO */
+
+.miembro-info{
+  padding:30px;
+}
+
+.miembro-info span{
+  color:#b58b54;
+  letter-spacing:3px;
+  font-size:.75rem;
+
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+.miembro-info h3{
+  font-size:2rem;
+  margin:15px 0;
+
+  color:#1c1c1c;
+  font-family:"Playfair Display",serif;
+  font-weight:500;
+}
+
+.miembro-info p{
+  color:#666;
+  line-height:1.8;
+  font-size:.95rem;
+}
+
+/* ===== TABLET ===== */
+
+@media(max-width:1000px){
+
+  .nosotros{
+    padding:110px 7%;
+  }
+
+  .nosotros-header h2{
+    font-size:3.2rem;
+  }
+
+  .equipo-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .miembro-img img{
+    height:420px;
+  }
+
+}
+
+/* ===== TELEFONO ===== */
+
+@media(max-width:700px){
+
+  .nosotros{
+    padding:90px 6%;
+  }
+
+  .nosotros-header{
+    margin-bottom:55px;
+  }
+
+  .nosotros-header h2{
+    font-size:2.4rem;
+    line-height:1.2;
+  }
+
+  .nosotros-header p{
+    font-size:.95rem;
+  }
+
+  .equipo-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .miembro-card{
+    border-radius:24px;
+  }
+
+  .miembro-img img{
+    height:360px;
+  }
+
+  .miembro-info{
+    padding:24px;
+  }
+
+  .miembro-info h3{
+    font-size:1.7rem;
+  }
+
+  .miembro-info p{
+    font-size:.9rem;
+    line-height:1.7;
+  }
+
+}
