@@ -4,16 +4,16 @@ import '../assets/css/Catalogo.css';
 
 const Catalogo = () => {
 
-  const [productoActivo, setProductoActivo] = useState(null);
-  const [cantidad, setCantidad] = useState(1);
-const navigate = useNavigate();
-  const productos = [
+    const [productoActivo, setProductoActivo] = useState(null);
+    const [cantidad, setCantidad] = useState(1);
+    const navigate = useNavigate();
+    const productos = [
     {
         id: 1,
         nombre: 'Relicario Corazon Mariposa',
         categoria: 'Relicario Premium',
         precio: 140,
-        imagen: 'src/assets/images/Producto1.png',
+        imagen: './assets/images/Producto1.png',
         descripcion: 'Diseño refinado con acabado brillante inspirado en la alta joyería contemporánea.',
         material: 'Oro 18K',
         piedra: 'Diamante Premium',
@@ -25,7 +25,7 @@ const navigate = useNavigate();
         nombre: 'Collar Étoile',
         categoria: 'Luxury Collection',
         precio: 3199,
-        imagen: 'src/assets/images/Producto2.png',
+        imagen: './assets/images/Producto2.png',
         descripcion: 'Elegancia minimalista diseñada para complementar estilos sofisticados.',
         material: 'Oro Blanco',
         piedra: 'Zafiro',
