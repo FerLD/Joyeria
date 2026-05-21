@@ -22,21 +22,21 @@ const Catalogo = () => {
     },
     {
         id: 2,
-        nombre: 'Collar Étoile',
+        nombre: 'Esclava de diamantes',
         categoria: 'Luxury Collection',
-        precio: 3199,
+        precio: 230,
         imagen: '/images/Producto2.png',
         descripcion: 'Elegancia minimalista diseñada para complementar estilos sofisticados.',
         material: 'Oro Blanco',
         piedra: 'Zafiro',
         garantia: '18 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 3,
-        nombre: 'Aretes Royale',
+        nombre: 'Pulsera de lujo',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 130,
         imagen: '/images/Producto3.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
@@ -46,93 +46,93 @@ const Catalogo = () => {
     },
     {
         id: 4,
-        nombre: 'Anillo Imperial',
+        nombre: 'Perro de globo',
         categoria: 'Anillos Premium',
-        precio: 2499,
+        precio: 85,
         imagen: '/images/Producto4.png',
         descripcion: 'Diseño refinado con acabado brillante inspirado en la alta joyería contemporánea.',
         material: 'Oro 18K',
         piedra: 'Diamante Premium',
         garantia: '12 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 5,
-        nombre: 'Collar Étoile',
+        nombre: 'Brazalete de diamantes',
         categoria: 'Luxury Collection',
-        precio: 3199,
+        precio: 170,
         imagen: '/images/Producto5.png',
         descripcion: 'Elegancia minimalista diseñada para complementar estilos sofisticados.',
         material: 'Oro Blanco',
         piedra: 'Zafiro',
         garantia: '18 meses',
-        limite: 4,
+        limite: 2
     },
     {
         id: 6,
-        nombre: 'Aretes Royale',
+        nombre: 'Tortuga de lujo',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 90,
         imagen: '/images/Producto6.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 7,
-        nombre: 'Aretes Royale',
+        nombre: 'Relicario de corazon',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 140,
         imagen: '/images/Producto7.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 8,
-        nombre: 'Aretes Royale',
+        nombre: 'Tortuga Esmeralda',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 140,
         imagen: '/images/Producto8.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 9,
-        nombre: 'Aretes Royale',
+        nombre: 'Brazalete de oro',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 90,
         imagen: '/images/Producto9.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 10,
         nombre: 'Aretes Royale',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 90,
         imagen: '/images/Producto10.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 11,
-        nombre: 'Aretes Royale',
+        nombre: 'Arracadas',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 130,
         imagen: '/images/Producto11.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
@@ -142,93 +142,93 @@ const Catalogo = () => {
     },
     {
         id: 12,
-        nombre: 'Aretes Royale',
+        nombre: 'Aretes de plata',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 90,
         imagen: '/images/Producto12.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 13,
-        nombre: 'Aretes Royale',
+        nombre: 'Mariposa con negro',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 95,
         imagen: '/images/Producto13.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 14,
-        nombre: 'Aretes Royale',
+        nombre: 'Pulsera doble',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 90,
         imagen: '/images/Producto14.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 15,
-        nombre: 'Aretes Royale',
+        nombre: 'Pulsera de diamantes',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 180,
         imagen: '/images/Producto15.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 16,
-        nombre: 'Aretes Royale',
+        nombre: 'Perrito de colores',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 130,
         imagen: '/images/Producto16.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 3
     },
     {
         id: 17,
-        nombre: 'Aretes Royale',
+        nombre: 'Pusera de corazones finos',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 230,
         imagen: '/images/Producto17.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 1
     },
     {
         id: 18,
-        nombre: 'Aretes Royale',
+        nombre: 'Perrito de colores express',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 150,
         imagen: '/images/Producto16.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 19,
-        nombre: 'Aretes Royale',
+        nombre: 'Cadena de 50 CM',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 175,
         imagen: '/images/Producto19.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
@@ -238,16 +238,16 @@ const Catalogo = () => {
     },
     {
         id: 20,
-        nombre: 'Aretes Royale',
+        nombre: 'Corazon sentido',
         categoria: 'Edición Exclusiva',
-        precio: 1899,
+        precio: 190,
         imagen: '/images/Producto20.png',
         descripcion: 'Inspirados en la joyería clásica con acabados modernos premium.',
         material: 'Plata Italiana',
         piedra: 'Cristal Swarovski',
         garantia: '6 meses',
-        limite: 4
-    }
+        limite: 1
+        }
   ];
 
     const abrirModal = (producto) => {
