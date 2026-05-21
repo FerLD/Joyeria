@@ -16,7 +16,7 @@ const Nosotros = () => {
                 {/* CARD */}
                 <article className="miembro-card">
                     <div className="miembro-img">
-                        <img src="src/assets/images/Yen.png" alt="" />
+                        <img src="/images/Yen.png" alt="" />
                     </div>
                     <div className="miembro-info">
                         <h3>Yenscenn Sujeith Barba Montaño</h3>
@@ -27,7 +27,7 @@ const Nosotros = () => {
                 {/* CARD */}
                 <article className="miembro-card">
                     <div className="miembro-img">
-                        <img src="src/assets/images/Fer.png" alt="" />
+                        <img src="/images/Fer.png" alt="" />
                     </div>
                     <div className="miembro-info">
                         <h3>Fernando Lozano Duran </h3>
@@ -38,7 +38,7 @@ const Nosotros = () => {
                 {/* CARD */}
                 <article className="miembro-card">
                     <div className="miembro-img">
-                        <img src="src/assets/images/Agus.png" alt="" />
+                        <img src="/images/Agus.png" alt="" />
                     </div>
                     <div className="miembro-info">
                         <h3>Agustin Rodriguez Vega</h3>
@@ -49,7 +49,7 @@ const Nosotros = () => {
                 {/* CARD */}
                 <article className="miembro-card">
                     <div className="miembro-img">
-                        <img src="src/assets/images/Marco.png" alt="" />
+                        <img src="/images/Marco.png" alt="" />
                     </div>
                     <div className="miembro-info">
                         <h3>Marco Antonio Alvarado becerra</h3>
