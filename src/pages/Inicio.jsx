@@ -40,7 +40,7 @@ const Inicio = () => {
           </div>
 
           <div className="imagen">
-            <img src="src/assets/images/Producto4.png" alt="joya" />
+            <img src="./assets/images/Producto4.png" alt="joya" />
           </div>
         </div>
       </section>
@@ -57,13 +57,13 @@ const Inicio = () => {
           </div>
 
           <div className="producto">
-            <img src="src/assets/images/Producto2.png" alt="Producto 2" />
+            <img src="./assets/images/Producto2.png" alt="Producto 2" />
             <h3>Pulsera de Oro</h3>
             <p>Una pulsera de oro con un diseño clásico y atemporal.</p>
           </div>
 
           <div className="producto">
-            <img src="src/assets/images/Producto3.png" alt="Producto 3" />
+            <img src="./assets/images/Producto3.png" alt="Producto 3" />
             <h3>Collar de oro</h3>
             <p>Un collar de oro con un diseño clásico.</p>
           </div>
@@ -79,7 +79,7 @@ const Inicio = () => {
         <div className="caracteristicas-wrapper">
 
           <div className="caracteristicas-img">
-            <img src="src/assets/images/Modelo1.png" alt="modelo" />
+            <img src="./assets/images/Modelo1.png" alt="modelo" />
           </div>
 
           <div className="caracteristicas-content">
