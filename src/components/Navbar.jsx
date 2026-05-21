@@ -22,7 +22,7 @@ return (
     <div className="nav-container">
 
         <div className="logo">
-            <img src="src/assets/images/Icon-AD.png" className="Icon-AD"/>
+            <img src="/images/Icon-AD.png" className="Icon-AD"/>
             Aura<span>Dorada</span>
         </div>
 
