@@ -34,7 +34,7 @@ const Inicio = () => {
       <section className="portada">
         <div className="contenido">
           <div className="texto">
-            <img src="src/assets/images/AuraDorada.png" />
+            <img src="./assets/images/AuraDorada.png" />
             <p>Joyas que cuentan tu historia realzan tu estilo y te acompañan a lo largo de tu vida</p>
             <button className="btn">Contáctanos</button>
           </div>
@@ -51,7 +51,7 @@ const Inicio = () => {
         <div className="grid-productos">
 
           <div className="producto">
-            <img src="src/assets/images/Producto1.png" alt="Producto 1" />
+            <img src="./assets/images/Producto1.png" alt="Producto 1" />
             <h3>Relicario de oro</h3>
             <p>Un relicario elegante de oro con diseño moderno en forma de corazón.</p>
           </div>
