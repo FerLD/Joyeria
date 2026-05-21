@@ -10,15 +10,15 @@ const navigate = useNavigate();
   const productos = [
     {
         id: 1,
-        nombre: 'Anillo Imperial',
-        categoria: 'Anillos Premium',
-        precio: 2499,
+        nombre: 'Relicario Corazon Mariposa',
+        categoria: 'Relicario Premium',
+        precio: 140,
         imagen: 'src/assets/images/Producto1.png',
         descripcion: 'Diseño refinado con acabado brillante inspirado en la alta joyería contemporánea.',
         material: 'Oro 18K',
         piedra: 'Diamante Premium',
         garantia: '12 meses',
-        limite: 4
+        limite: 2
     },
     {
         id: 2,
