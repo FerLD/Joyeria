@@ -34,13 +34,13 @@ const Inicio = () => {
       <section className="portada">
         <div className="contenido">
           <div className="texto">
-            <img src="./assets/images/AuraDorada.png" />
+            <img src="/images/AuraDorada.png" />
             <p>Joyas que cuentan tu historia realzan tu estilo y te acompañan a lo largo de tu vida</p>
             <button className="btn">Contáctanos</button>
           </div>
 
           <div className="imagen">
-            <img src="./assets/images/Producto4.png" alt="joya" />
+            <img src="/images/Producto4.png" alt="joya" />
           </div>
         </div>
       </section>
@@ -51,19 +51,19 @@ const Inicio = () => {
         <div className="grid-productos">
 
           <div className="producto">
-            <img src="./assets/images/Producto1.png" alt="Producto 1" />
+            <img src="/images/Producto1.png" alt="Producto 1" />
             <h3>Relicario de oro</h3>
             <p>Un relicario elegante de oro con diseño moderno en forma de corazón.</p>
           </div>
 
           <div className="producto">
-            <img src="./assets/images/Producto2.png" alt="Producto 2" />
+            <img src="/images/Producto2.png" alt="Producto 2" />
             <h3>Pulsera de Oro</h3>
             <p>Una pulsera de oro con un diseño clásico y atemporal.</p>
           </div>
 
           <div className="producto">
-            <img src="./assets/images/Producto3.png" alt="Producto 3" />
+            <img src="/images/Producto3.png" alt="Producto 3" />
             <h3>Collar de oro</h3>
             <p>Un collar de oro con un diseño clásico.</p>
           </div>
@@ -79,7 +79,7 @@ const Inicio = () => {
         <div className="caracteristicas-wrapper">
 
           <div className="caracteristicas-img">
-            <img src="./assets/images/Modelo1.png" alt="modelo" />
+            <img src="/images/Modelo1.png" alt="modelo" />
           </div>
 
           <div className="caracteristicas-content">
